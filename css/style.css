@@ -1,0 +1,139 @@
+* {
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(1, 23, 34);
+    font-family: 'Roboto Flex', sans-serif;
+}
+ul {
+    list-style: none;
+font-style: italic;
+font-size: 20px;
+}
+
+a {
+text-decoration: none;
+}
+body {
+
+    /*background-image: url(../imagens/pexels-gotta-be-worth-it-1029007.jpg);
+
+background-repeat: no-repeat;
+background-position: center center fixed ;
+background-size: 1200px ;
+*/
+background: url(./pexels-pixabay-33545.jpg) no-repeat center center fixed ;
+background-size: cover ;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 45px;
+
+}
+
+header ul {
+display: flex ;
+}
+
+header ul li {
+  padding: 5px;
+}
+
+ header ul li a:hover{
+   transition: 800ms;
+}
+
+ header ul li a:hover{
+  color: rgba(5, 5, 53, 0.479);
+  text-decoration:underline ;
+}
+
+.container{
+    text-align: center;
+}
+.container .name h1{
+    font-size: 50px;
+}
+.container .name h5{
+    font-size: 30px;
+}
+
+#arrow{
+    font-size: 35px;
+cursor: pointer;
+animation: blink 1s steps(5,start) infinite;
+}
+@keyframes blink{
+    to{
+        visibility: hidden;
+    }
+}
+#animation{
+    transition: 300ms;
+}
+.rotate{
+    transform:rotate(180deg) ;
+    transition: 300ms;
+}
+.active{
+    display: block !important;
+}
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form {
+width: 40%;
+margin: 0 auto;
+border: thick double #fff;
+margin-top: 30px;
+padding: 25px;
+} 
+.form input{
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+
+}
+.form button{
+    width: 15%;
+    padding: 5px 10px;
+    background-color:  rgba(5, 5, 53, 0.479);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -4px;
+    margin-top: 20px;
+}
+.form button:hover{
+background-color: rgb(1, 23, 34);
+color: white;
+}
+@media only screen and (max-width: 768px){
+    .form{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .container .name h1{
+        font-size: 30px;
+    }
+    .container .name h5{
+        font-size: 15px;
+    }
+    #about p {
+        max-width: 80%;
+        text-align:justify;
+    }
+    .form{
+        width: 100%;
+    }
+}
